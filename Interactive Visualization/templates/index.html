@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interactive Visualization</title>
+  <link rel="stylesheet" href="./static/lib/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./static/lib/css/bootstrap-big-grid.min.css">
+  <link rel="stylesheet" href="./static/lib/css/dc.min.css">
+  <link rel="stylesheet" href="./static/lib/css/leaflet.css">
+  <link rel="stylesheet" href="./static/css/styles.css">
+</head>
+<body class="application">
+
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="./">King Country Properties</a>
+      </div>
+      <!-- Property Count -->
+        <p class="navbar-text navbar-right">
+          Properties:
+          <span id="property-count"></span>
+        </p>
+      <!-- Property Count -->
+    </div>
+  </div>
+
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="row">
+
+          <!-- Price Chart -->
+          <div class="col-lg-12">
+            <div class="chart-container">
+              <div class="chart-title">
+                Price
+              </div>
+              <div class="chart">
+                <div id="price-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Price Chart -->
+
+          <!-- Time Chart -->
+          <div class="col-lg-12">
+            <div class="chart-container">
+              <div class="chart-title">
+                Build Year
+              </div>
+              <div class="chart">
+                <div id="build-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Time Chart -->
+
+          <!-- Living -->
+          <div class="col-lg-6">
+            <div class="chart-container">
+              <div class="chart-title">
+                Living Area
+              </div>
+              <div class="chart">
+                <div id="living-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Living -->
+
+          <!-- Lot -->
+          <div class="col-lg-6">
+            <div class="chart-container">
+              <div class="chart-title">
+                Lot Area
+              </div>
+              <div class="chart">
+                <div id="lot-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Lot -->
+
+          <!-- Main Floor -->
+          <div class="col-lg-6">
+            <div class="chart-container">
+              <div class="chart-title">
+                Main Floor Area
+              </div>
+              <div class="chart">
+                <div id="main-floor-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Main Floor -->
+
+          <!-- Basement -->
+          <div class="col-lg-6">
+            <div class="chart-container">
+              <div class="chart-title">
+                Basement Area
+              </div>
+              <div class="chart">
+                <div id="basement-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Basement -->
+
+          <!-- Floors -->
+          <div class="col-lg-4">
+            <div class="chart-container">
+              <div class="chart-title">
+                Floors
+              </div>
+              <div class="chart">
+                <div id="floors-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Floors -->
+
+          <!-- Grade -->
+          <div class="col-lg-4">
+            <div class="chart-container">
+              <div class="chart-title">
+                Grade
+              </div>
+              <div class="chart">
+                <div id="grade-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Grade -->
+
+          <!-- Condition -->
+          <div class="col-lg-4">
+            <div class="chart-container">
+              <div class="chart-title">
+                Condition
+              </div>
+              <div class="chart">
+                <div id="condition-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Condition -->
+
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="row">
+
+          <!-- Map -->
+          <div class="col-lg-12">
+            <div class="chart-container">
+              <div class="chart-title">
+                Map
+              </div>
+              <div class="chart">
+                <div id="map" style="width: 809px; height: 480px"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Map -->
+
+          <div class="col-lg-6">
+            <div class="row">
+
+              <!-- Bed -->
+              <div class="col-lg-12">
+                <div class="chart-container">
+                  <div class="chart-title">
+                    Bed
+                  </div>
+                  <div class="chart">
+                    <div id="beds-chart"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Bed -->
+
+              <!-- View -->
+              <div class="col-lg-8">
+                <div class="chart-container">
+                  <div class="chart-title">
+                    View
+                  </div>
+                  <div class="chart">
+                    <div id="view-chart"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- View -->
+
+              <!-- Waterfront -->
+              <div class="col-lg-4">
+                <div class="chart-container">
+                  <div class="chart-title">
+                    Waterfront
+                  </div>
+                  <div class="chart">
+                    <div id="waterfront-chart"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Waterfront -->
+
+            </div>
+          </div>
+
+          <!-- Bath -->
+          <div class="col-lg-6">
+            <div class="chart-container">
+              <div class="chart-title">
+                Bath
+              </div>
+              <div class="chart">
+                <div id="baths-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Bath -->
+
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="row">
+
+          <!-- Zip -->
+          <div class="col-lg-4">
+            <div class="chart-container">
+              <div class="chart-title">
+                Zip
+              </div>
+              <div class="chart">
+                <div id="zip-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Zip -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./static/lib/js/jquery.min.js"></script>
+  <script src="./static/lib/js/bootstrap.min.js"></script>
+  <script src="./static/lib/js/crossfilter.min.js"></script>
+  <script src="./static/lib/js/d3.min.js"></script>
+  <script src="./static/lib/js/dc.min.js"></script>
+  <script src="./static/lib/js/leaflet.js"></script>
+  <script src="./static/lib/js/queue.js"></script>
+  <script src="./static/lib/js/underscore-min.js"></script>
+  <script src='./static/js/graphs.js' type='text/javascript'></script>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+body.application {
+  background: #f1f1f1;
+  padding: 60px 20px 0;
+}
+body.application > .container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+body.application div[class^="col-"] {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+body.application div[class^="col-"] div[class^="col-"] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+body.application hr {
+  border-color: #1b1b1b;
+  margin: 10px 0;
+}
+
+.navbar-inverse {
+  background-color: #e34234;
+  border-color: #1a1a1a;
+}
+.navbar-inverse .navbar-nav > li > a,
+.navbar a.navbar-brand {
+  color: #fbfbfb;
+  text-decoration: none;
+}
+
+.chart-container {
+  background: #f1f1f1;
+  border: 1px solid grey;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+.chart-container .chart-title {
+  border-bottom: 1px solid #1b1b1b;
+  color: #666;
+  font-size: 14px;
+  font-weight: 200;
+  padding: 7px 10px 4px;
+}
+
+.chart-container .chart {
+  /*min-height: 240px;*/
+  overflow: hidden;
+  padding: 5px 10px;
+  position: relative;
+}
+
+.chart-container .chart-notes {
+  background: #fbfbfb;
+  border-top: 1px solid #1d1d1d;
+  color: #1b1b1b;
+  font-size: 12px;
+  padding: 8px 10px 5px;
+}
+
+.dc-chart g.row text {
+    fill: black;
+}
+
+.leaflet-zoom-animated {
+  height: 576px;
+  width: 971px;
+}
+
+#living-chart svg .x .tick text {
+  text-anchor: end !important;
+  transform: rotate(-20deg);
+  font-size: 0.5em;
+}
+
+#lot-chart svg .x .tick text {
+  text-anchor: end !important;
+  transform: rotate(-12deg);
+  font-size: 0.5em;
+}
+
+#main-floor-chart svg .x .tick text {
+  text-anchor: end !important;
+  transform: rotate(-20deg);
+  font-size: 0.5em;
+}
+
+#basement-chart svg .x .tick text {
+  text-anchor: end !important;
+  transform: rotate(-20deg);
+  font-size: 0.5em;
+}
+
+#floors-chart svg g .axis .tick text {
+  text-anchor: end !important;
+  transform: rotate(-20deg);
+  font-size: 0.5em;
+}
+
+#condition-chart svg g .axis .tick text {
+  text-anchor: end !important;
+  transform: rotate(-20deg);
+  font-size: 0.5em;
+}
+
+#grade-chart svg g .axis .tick text {
+  text-anchor: end !important;
+  transform: rotate(-20deg);
+  font-size: 0.5em;
+}
+#grade-chart svg g .row text {
+  font-size: 0.6em;
+}
+
+#waterfront-chart svg g .axis .tick text {
+  text-anchor: end !important;
+  transform: rotate(-40deg);
+  font-size: 0.5em;
+}
+
+.navbar-text {
+  color: white !important;
+  border: 1px !important;
+  font-size: 1.25em !important;
+}
+
+.navbar-right {
+  margin-right: 345px !important;
+}

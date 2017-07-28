@@ -27,3 +27,4 @@ pip3 install flask<br/>
 <br/>
 Run with the following in terminal:<br/>
 python3 app.py
+<img src="https://github.com/fsharpasharpinfinity/King_County_Regression/blob/master/ss.png?raw=true" />

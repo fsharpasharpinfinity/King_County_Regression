@@ -3,6 +3,7 @@ Project that leverages 2015 King County Housing dataset, consisting of a univari
 <br/>
 <h3>To use the notebooks, install the following dependencies by:</h3><br/>
 <br/>
+pip3 install jupyter
 pip3 install sklearn<br/>
 pip3 install pandas<br/>
 pip3 install numpy<br/>
@@ -18,7 +19,7 @@ https://github.com/Microsoft/LightGBM/wiki/Installation-Guide<br/>
 <br/>
 pip3 install git+https://github.com/ArdalanM/pyLightGBM.git<br/>
 <br/>
-<h3>Run with the following in terminal:</h3><br/>
+<h3>Run with the following in terminal, ensuring that the current directory contains all files downloaded from the repo.:</h3><br/>
 jupyter notebook<br/>
 <br/>
 <h3>To use the interactive visualization app, install:</h3><br/>

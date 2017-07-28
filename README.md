@@ -25,6 +25,9 @@ jupyter notebook<br/>
 <br/>
 pip3 install flask<br/>
 <br/>
+The app is optimized for 1920x1080 resolution.
+<br/>
+<br/>
 <h3>Run with the following in terminal:</h3><br/>
 python3 app.py<br/>
 <br/>

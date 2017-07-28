@@ -19,7 +19,7 @@ https://github.com/Microsoft/LightGBM/wiki/Installation-Guide<br/>
 <br/>
 pip3 install git+https://github.com/ArdalanM/pyLightGBM.git<br/>
 <br/>
-<h3>Run with the following in terminal, ensuring that the current directory contains all files downloaded from the repo.:</h3><br/>
+<h3>After downloading the repo, run with the following in terminal, navigate to the folder and enter the following in terminal:</h3><br/>
 jupyter notebook<br/>
 <br/>
 <h3>To use the interactive visualization app, install:</h3><br/>
@@ -27,7 +27,6 @@ jupyter notebook<br/>
 pip3 install flask<br/>
 <br/>
 The app is optimized for 1920x1080 resolution.
-<br/>
 <br/>
 <h3>Run with the following in terminal:</h3><br/>
 python3 app.py<br/>

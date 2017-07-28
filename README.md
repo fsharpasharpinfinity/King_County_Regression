@@ -1,7 +1,7 @@
 # King County Regression<br/>
 Project that leverages 2015 King County Housing dataset, consisting of a univariate analysis on price, feature engineering using various distance APIs, and model building and ensembling in order to produce a regression model.<br/>
 <br/>
-<h3>To use the notebooks, install the following dependencies by:<h3><br/>
+<h3>To use the notebooks, install the following dependencies by:</h3><br/>
 <br/>
 pip3 install sklearn<br/>
 pip3 install pandas<br/>
